@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@My_Website</title>
+    <style>
+    
+        button{
+            background-color: #AF7AC5 ;
+            color:#AF7AC5 ;
+            border: none;
+            height: 30px;
+            width: 80px;
+            transition: opacity 1s;
+            
+        }
+        button:hover{
+            background-color: gray;
+            opacity: 0.8;
+        }
+        .button:active{
+            opacity:0.5;
+        }
+        h1{
+            font size:50px;
+        }
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        
+        nav a{
+            background-color: #AF7AC5 ;
+            padding: 10px;
+            margin-left: 10px;
+            text-align: left;
+        }
+        body{
+            
+            font-size: 75px;         
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        section{
+           
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #020000;
+            padding: 100px;
+            text-align: left;
+            width:20%;
+        }
+        form {
+            margin-bottom: 50px;
+        }
+        .heading{
+            color: whitesmoke;
+            font-size: 75px;
+            text-align: center;
+            padding: 180px;
+            color: black;
+        }
+        .contact-buttons{
+            text-align: top;
+        }
+    </style>
+</head>
+<body>
+    <img style = "height: 300px; width:300px;" src = "C:\Users\shanna\OneDrive\Documents\photo.k.jpg" alt="me">
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blog">Contact</a>
+            <a href="#contact">About Me</a>
+        </nav>
+        <div class="heading">
+            <h1>Hi there, I'm Keerthi</h1>
+            <p>A student pursuing Computer Science and Engineering.</p>
+            <hr style="width:700px;text-align:center;margin: left 10px;border-color: black;">
+            
+                
+        </div>
+        <section id="about">
+            <h1>About Me</h1>
+            <p> I am currently pursuing my bachelors in Engineering and I am confident in my ability to collaborate with others. I am also committed to ongoing growth and development, and I am always looking for opportunities to learn and improve.</p>
+
+        </section>
+        
+        <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            
+            <li>C </li>
+            <li>Oops with C++</li>
+            <li>Data Structures </li>
+            <li>Python</li>
+            <li>HTML,CSS,Javascript</li>
+        </ul>
+        </section>
+        <section id="blog">
+            <h1>Blog</h1>
+            <p1>Welcome to my solitude...<br/>This is my space where I share my experiences and also insecurities.<br/>Firstly let me begin with my super trait ;which is being an introvert.<br/>An introvert is a person who tends to be quiet, reserved, and reflective.<br/>Introversion is a personality trait, not a disorder or a problem.<br/> In fact, introverts have many strengths and advantages, such as deep thinking, creativity, and the ability to build strong, meaningful relationships.<br/>Here are some of the situations I face ...they are Fear of being judged,Difficulty in social situations,Fear of being rejected,Difficulty in making new friends.<br/>Finally I just want to conclude that the key to overcoming any insecurities as an introvert is to embrace and accept oneself for who you are, and to find ways to cultivate and nurture your unique talents and abilities.</p1>
+
+        </section>
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <p></p>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+        
+                </tr>
+                <tr>
+                    <td>Rock,Paper,Scissors.</td>
+                    <td>This code is written in C language.This project is usually played by two players p1 and p2.This game actually kinda fun!</td>
+                </tr>
+                <tr>
+                    <td>Hospital Management System.</td>
+                    <td>This code is written using C++ using file handling. This project helps hospitals track and manage their financial transactions, generate invoices and keeps records of payments and expenses and also details about the patients.</td>
+                </tr>
+                
+                
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <h3>
+            <a href = "https://www.linkedin.com/in/saikeerthimurari1/" target="_blank">
+                <img  src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrcJZh0CxAXl2rzIThNguRvNywCe8t-4mICSW7ODc2PA&s" height="50px",width="50px"  class = "image">
+                saikeerthimurari1
+            </a><br/><br/>
+                <a href = "https://www.instagram.com/?hl=en" target="_blank">
+                    <img  src = "https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg"height="50px",width="50px" class = "image">
+                    mochi_05_04
+                </a><br/><br/>
+                <a href = "https://github.com/dashboard" target="_blank">
+                    <img  src = "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" height="50px",width="50px"class = "image">
+                    github
+                </a><br/><br/>
+                <a href = "https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                    <img  src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07rNr35D0xARO4yyTTarteyAw6iwBEzVvS-lOzBg2bA&s" height=50px width=50px class = "image">
+                    saikeerthi_murari@srmap.edu.in
+                </a><br/><br/>
+                <a href = "https://www.codechef.com/dashboard" target="_blank">
+                    <img  src = "https://images.yourstory.com/cs/images/companies/codechef-1592821643695.jpg?fm=auto&ar=1:1&mode=fill&fill=solid&fill-color=fff" height=50px width=50px class = "image">
+                    Codechef
+                </a><br/><br/>
+            </h3>
+        </section>
+    
+    
+    
+    
+    
+</body>
+</html>
